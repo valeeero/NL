@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from note_lists.models import NoteList
+
+admin.site.register(NoteList)
