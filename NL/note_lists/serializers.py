@@ -6,4 +6,4 @@ from .models import NoteList
 class NoteSerializer(ModelSerializer):
 	class Meta:
 		model = NoteList
-		fields = ['text', 'date', ]
+		fields = ['text', 'date', 'id']

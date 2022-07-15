@@ -8,7 +8,7 @@ from note_lists.views import NoteView, notes_page
 from note_lists.views import notes_app
 
 router = SimpleRouter()
-router.register('api/note_lists', NoteView)
+router.register('note_lists', NoteView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
