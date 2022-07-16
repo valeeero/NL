@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.urls import path
+# from django.conf.urls import url
+from django.urls import path, include
 
 from rest_framework.routers import SimpleRouter
 
@@ -15,6 +16,8 @@ urlpatterns = [
 
     path('', notes_page),
     path('note_page/', notes_app),
+    # url('social/', include('social_django.urls', namespace='social')),
 ]
+
 
 urlpatterns += router.urls
